@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.91")
+    }
+}
+
+ext{
+    serenityVersion = '2.0.55'
+    serenityCucumberVersion = '1.9.51'
+}
+dependencies {
+
+    compile "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    compile "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    testCompile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.11.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.25'
+}
+
+gradle.startParameter.continueOnFailure = true
