@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">19.513s</div>
+<div class="counter">24.135s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,13 +76,12 @@
 <a name="Carolina choose the most economic hotel"></a>
 <h3 class="failures">Carolina choose the most economic hotel</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=87.0.4280.141)
+<pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;dx_dx-e98caca1-674e-20ac-992b-977b514f986e_checkOut&quot; class=&quot;dx-texteditor-input&quot; type=&quot;text&quot;&gt; is not reachable by keyboard
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CPX-R4SZBWGIAJC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DEISY~1.MOS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49304}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 12224, moz:profile: C:\Users\deisy.mosquera\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 682be042-369b-42a0-9d52-fcb26ec8ac53
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,7 +96,7 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.sendKeys(WebElementFacadeImpl.java:1293)
 	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget.performAs(SendKeysIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$RRNG9yKa.performAs$accessor$AARQTlCN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$NGYR4C5s.performAs$accessor$5uLr8Fqk(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,12 +107,12 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$RRNG9yKa.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$NGYR4C5s.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at tasks.EnterDataForSearchHotel.performAs(EnterDataForSearchHotel.java:31)
-	at tasks.EnterDataForSearchHotel$ByteBuddy$v28rYOa4.performAs$accessor$WgEAiLzj(Unknown Source)
+	at tasks.EnterDataForSearchHotel.performAs(EnterDataForSearchHotel.java:29)
+	at tasks.EnterDataForSearchHotel$ByteBuddy$PmKzPPMH.performAs$accessor$fgpGDD2B(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,12 +123,12 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at tasks.EnterDataForSearchHotel$ByteBuddy$v28rYOa4.performAs(Unknown Source)
+	at tasks.EnterDataForSearchHotel$ByteBuddy$PmKzPPMH.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at stepdefinitions.ChooseHotelStepdefinitions.sheChoseOptionsLocationLasVegasAndStarDateEndDate(ChooseHotelStepdefinitions.java:33)
-	at ✽.she choose options location, Los Angeles and start date &quot;3/16/2021&quot; end date &quot;3/20/2021&quot;(src/test/resources/features/choose_hotel.feature:10)
+	at stepdefinitions.ChooseHotelStepdefinitions.sheChoseOptionsLocationLasVegasAndStarDateEndDate(ChooseHotelStepdefinitions.java:35)
+	at ✽.she choose options location, Las Vegas and start date &quot;3/16/2021&quot; end date &quot;3/20/2021&quot;(src/test/resources/features/choose_hotel.feature:10)
 </pre>
 </span>
 </div>
@@ -146,7 +145,7 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 </thead>
 <tr>
 <td class="failures">Carolina choose the most economic hotel</td>
-<td class="failures">19.513s</td>
+<td class="failures">24.135s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -154,16 +153,26 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jan 29, 2021 4:52:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+<pre>Jan 29, 2021 11:34:16 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jan 29, 2021 11:34:16 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --always-authorize-plugins, --disable-extensions], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 13279
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jan 29, 2021 4:52:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
+1611981259191	geckodriver	INFO	Listening on 127.0.0.1:12832
+1611981259862	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\DEISY~1.MOS\\AppData\\Local\\Temp\\rust_mozprofileKmoe4Z&quot;
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
+1611981266676	Marionette	INFO	Listening on port 59468
+1611981266993	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jan 29, 2021 11:34:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+1611981276148	Marionette	INFO	Stopped listening on port 59468
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -175,7 +184,7 @@ INFO: Detected dialect: W3C
 TEST FAILED WITH ERROR: Carolina choose the most economic hotel
 ---------------------------------------------------------------------
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP usuario enters '3/20/2021' into Fild for end date
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element not interactable
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Element &lt;input id=&quot;dx_dx-e98caca1-674e-20ac-992b-977b514f986e_checkOut&quot; class=&quot;dx-texteditor-input&quot; type=&quot;text&quot;&gt; is not reachable by keyboard
 </pre>
 </span>
 </div>
@@ -187,7 +196,7 @@ TEST FAILED WITH ERROR: Carolina choose the most economic hotel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at Jan 29, 2021 4:52:49 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at Jan 29, 2021 11:34:43 PM</p>
 </div>
 </div>
 </body>

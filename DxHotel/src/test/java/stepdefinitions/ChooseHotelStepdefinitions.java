@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import questions.ValidateTotalPrice;
 import tasks.EnterDataForSearchHotel;
 import tasks.OpenPage;
 import tasks.ValidatePrice;
@@ -16,7 +17,8 @@ import userinterfaces.HomePage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ChooseHotelStepdefinitions {
-    @Managed(driver = "chrome")
+    @Managed(driver = "firefox")
+   // @Managed(driver = "chrome")
     private WebDriver herBrowser;
     private Actor user = Actor.named("usuario");
     private HomePage homePage;
@@ -36,7 +38,7 @@ public class ChooseHotelStepdefinitions {
 
     @Then("^she verify the total price is (.*)$")
     public void sheVerifyThePriceInPage(float totalPrice){
-       // user.should(seeThat(ValidateTotalPrice.is(totalPrice)));
+        user.should(seeThat(ValidateTotalPrice.is(totalPrice)));
 
     }
 

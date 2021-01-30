@@ -7,15 +7,14 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
-0m20.417s
+0m24.681s
 
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=87.0.4280.141)
+org.openqa.selenium.ElementNotInteractableException: Element <input id="dx_dx-e98caca1-674e-20ac-992b-977b514f986e_checkOut" class="dx-texteditor-input" type="text"> is not reachable by keyboard
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CPX-R4SZBWGIAJC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DEISY~1.MOS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49304}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 12224, moz:profile: C:\Users\deisy.mosquera\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 682be042-369b-42a0-9d52-fcb26ec8ac53
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -30,7 +29,7 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.sendKeys(WebElementFacadeImpl.java:1293)
 	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget.performAs(SendKeysIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$RRNG9yKa.performAs$accessor$AARQTlCN(Unknown Source)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$NGYR4C5s.performAs$accessor$5uLr8Fqk(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -41,12 +40,12 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$RRNG9yKa.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.SendKeysIntoTarget$ByteBuddy$NGYR4C5s.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at tasks.EnterDataForSearchHotel.performAs(EnterDataForSearchHotel.java:31)
-	at tasks.EnterDataForSearchHotel$ByteBuddy$v28rYOa4.performAs$accessor$WgEAiLzj(Unknown Source)
+	at tasks.EnterDataForSearchHotel.performAs(EnterDataForSearchHotel.java:29)
+	at tasks.EnterDataForSearchHotel$ByteBuddy$PmKzPPMH.performAs$accessor$fgpGDD2B(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,12 +56,12 @@ Session ID: d6ab2ad43ad2f15048e0c525639a6b1a
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at tasks.EnterDataForSearchHotel$ByteBuddy$v28rYOa4.performAs(Unknown Source)
+	at tasks.EnterDataForSearchHotel$ByteBuddy$PmKzPPMH.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at stepdefinitions.ChooseHotelStepdefinitions.sheChoseOptionsLocationLasVegasAndStarDateEndDate(ChooseHotelStepdefinitions.java:33)
-	at ?.she choose options location, Los Angeles and start date "3/16/2021" end date "3/20/2021"(src/test/resources/features/choose_hotel.feature:10)
+	at stepdefinitions.ChooseHotelStepdefinitions.sheChoseOptionsLocationLasVegasAndStarDateEndDate(ChooseHotelStepdefinitions.java:35)
+	at ?.she choose options location, Las Vegas and start date "3/16/2021" end date "3/20/2021"(src/test/resources/features/choose_hotel.feature:10)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
