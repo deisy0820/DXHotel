@@ -19,15 +19,7 @@ public class ValidatePrice implements Task {
     private String checkIn;
     private String checkOut;
 
-
-
     public ValidatePrice() {
-    }
-
-    public ValidatePrice newIntance(){
-        ValidatePrice validate = new ValidatePrice();
-        return validate;
-
     }
 
     public ValidatePrice(String checkIn, String checkOut) {
@@ -47,7 +39,6 @@ public class ValidatePrice implements Task {
         Serenity.setSessionVariable("pagePrice").to(pagePrice);
 
     }
-
 
     public static ValidatePrice with(String checkIn, String checkOut) {
 

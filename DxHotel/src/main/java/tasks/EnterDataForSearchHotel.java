@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Keys;
 import userinterfaces.SearchHotel;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -26,14 +27,15 @@ public class EnterDataForSearchHotel implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-            actor.attemptsTo(
+
+        actor.attemptsTo(
                     Click.on(SearchHotel.LOCATION),
                     Click.on(DESTINATION.of(location).resolveFor(actor)),
-                    Enter.keyValues(checkIn).into(SearchHotel.CHECK_IN),
                     Enter.keyValues(checkOut).into(SearchHotel.CHECK_OUT),
+                    Enter.keyValues(checkIn).into(SearchHotel.CHECK_IN).thenHit(Keys.ENTER),
                     WaitUntil.the((BOTTON_SEARCH), isVisible()).forNoMoreThan(10).seconds(),
                     Click.on(BOTTON_SEARCH));
-    }
+}
     public static EnterDataForSearchHotel of(String location, String checkIn, String checkOut) {
 
         return Tasks.instrumented(EnterDataForSearchHotel.class, location, checkIn, checkOut);

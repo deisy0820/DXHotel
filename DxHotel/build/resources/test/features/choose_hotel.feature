@@ -7,5 +7,5 @@ Feature: enter to page DX Hotels and choose the most economic hotel
     Given that user enter to page
 
   Scenario: Carolina choose the most economic hotel
-    When she choose options location, Las Vegas and start date "3/16/2021" end date "3/20/2021"
-    Then she verify the total price is 450
+    When she choose options location, Paris and start date "4/08/2021" end date "4/12/2021"
+    Then she verify the total price is 550

@@ -18,7 +18,6 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ChooseHotelStepdefinitions {
     @Managed(driver = "firefox")
-   // @Managed(driver = "chrome")
     private WebDriver herBrowser;
     private Actor user = Actor.named("usuario");
     private HomePage homePage;
@@ -38,7 +37,8 @@ public class ChooseHotelStepdefinitions {
 
     @Then("^she verify the total price is (.*)$")
     public void sheVerifyThePriceInPage(float totalPrice){
-        user.should(seeThat(ValidateTotalPrice.is(totalPrice)));
+       user.should(seeThat(ValidateTotalPrice.is(totalPrice)));
+
 
     }
 

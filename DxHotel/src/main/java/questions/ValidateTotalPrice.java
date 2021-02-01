@@ -16,8 +16,7 @@ public class ValidateTotalPrice implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
 
-        float price = Serenity.sessionVariableCalled("pagePrice");
-
+        float price =Serenity.sessionVariableCalled("pagePrice");
         return price==totalPrice;
     }
 

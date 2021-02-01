@@ -13,7 +13,7 @@ public class SearchHotel {
     public static final Target CHECK_OUT = Target.the("Fild for end date")
             .locatedBy(("//div[@class='dx-dropdowneditor-input-wrapper']//input[@name='checkOut']//following-sibling::div[@class='dx-texteditor-container']//input"));
     public static final Target BOTTON_SEARCH = Target.the("Botton start of search in home page")
-            .located(By.xpath("(//div[@class='dx-button-content']//span[contains(text(), 'SEARCH')]));"));
+            .located(By.xpath("//*[contains(@aria-label,'SEARCH')]"));
 
 
 }

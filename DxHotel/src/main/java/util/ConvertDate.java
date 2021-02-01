@@ -32,7 +32,7 @@ public class ConvertDate {
             Date dateBefore = ConvertDate.ParseDate(checkIn);
             Date dateAfter = ConvertDate.ParseDate(checkOut);
             long difference = dateAfter.getTime() - dateBefore.getTime();
-            daysBetween = (difference / (1000 * 60 * 60 * 24));
+            daysBetween = (difference / (1000 * 60 * 60 * 24))+1;
 
         } catch (Exception e) {
             e.printStackTrace();

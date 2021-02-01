@@ -3,17 +3,23 @@ el reto consiste en Crear un robot que permita seleccionar el hotel con la tarif
 
 Librerías utilizadas:
 
-- serenity-screenplay  
-- serenity-cucumber  
+- screenplay  
+- cucumber  
 - junit  
 - dbunit  
+- Serenity BDD
  
 
 Pre-requisitos Java v1.8 update 151 o superior y JDK (variables de entorno configuradas) Eclipse IDE (Oxigen o Neon) o IntelliJ IDEA (2019.1) Gradle v4.10.2 o superior Cucumber Instalación.
+navegador firefox.
 comando para clonar este repositorio localmente:
 se debe ejecutar el siguiente comando: git clone https://github.com/deisy0820/DXHotel.git
 Importar el proyecto desde Eclipse o IntelliJ IDE.
+
+linea de comando para ejecutar por consola: gradle test
+
+el Reporte de serenity se puede encontrar en la siguiente ruta: C:\Users\deisy.mosquera\Desktop\Qvision\DxHotel\target\site\serenity\index.html
  
-Construido Con La automatización fue desarrollada con : BDD - Estrategia de desarrollo Screenplay Gradle Cucumber Serenity BDD Gherkin - Lenguaje Business Readable DSL (Lenguaje específico de dominio legible por el negocio) Versionado Se uso GIT para el control de versiones
+
 
 Autor Deisy Mosquera Perea - deisymsqr6@gmail.com
